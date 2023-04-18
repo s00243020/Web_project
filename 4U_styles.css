@@ -4,169 +4,318 @@ body {
     background-color:black;
     color: #fff;
     line-height: 1.6;
+    
 }
 
   .logo-img{
     height:122px;
 }
 
-.logo-container{
-    padding-left: 10px;
-    
-}
+
   
-  header {
-    background-color:black;
+header {
+  background-color:black;
     
 
-  }
+}
   
-  nav {
+nav {
     
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0px;
-    padding-bottom: 10px;
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  padding-bottom: 10px;
+}
   
-  nav li {
-    display: inline-block;
-    margin: 0 10px;
-  }
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
   
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 3px 6px;
-    border-radius: 4px;
-  }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
   
-  .nav-list-link{
-    position: relative;
-    transition: all .25s ease;
+.nav-list-link{
+  position: relative;
+  transition: all .25s ease;
 }
 
 .nav-list-link::after{
-    background: #17baaa;
-    bottom: -6px;
-    content: "";
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transform: scaleX(0);
-    transition: all .25s ease;
-    width: 100%;
+  background: #17baaa;
+  bottom: -6px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: all .25s ease;
+  width: 100%;
 }
 
 .nav-list-link:hover{
-    color: #17baaa;
+  color: #17baaa;
 }
 
 .nav-list-link:hover::after{
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
   
   
-  .hero {
-    
-    background-image: repeating-linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://www.tidyteamservices.com/wp-content/uploads/2021/04/Commercial-Cleaning-Services.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    text-align: left;
-    padding-left: 3%;
-  }
+.hero {
+  background-image: repeating-linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("https://www.tidyteamservices.com/wp-content/uploads/2021/04/Commercial-Cleaning-Services.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-left: 3%;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+
+}
+
   
-  .hero h1 {
-    font-size: 48px;
-  }
+#services {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
   
-  #services {
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+.service {
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #0d0d0d;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(0, 255, 208, 0.5);
+  transition: all 0.15s ease-in-out;
+}
   
-  .service {
-    width: 300px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #444;
-    border-radius: 5px;
-    text-align: center;
-  }
+.service img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
   
-  .service img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
+.service p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.service:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 5px 10px rgba(0, 57, 68, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 208, 0.5);
+}
+
+.service:hover img {
+  filter: brightness(50%);
+}
+
+.service:hover p {
+  color: rgb(207, 207, 207);
+}
+
+.vid{
+  display: flex;
+  background-color: #000000;
+  width:160vh;
+  height:60vh;
+  padding: 20px;
+  margin: 0px 20vh;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
   
-  .service h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
+}
+
+.vid iframe{
+  border-color: #17baaa;
+  border-width: 2px;
+  border-radius: 10px;
+  width: 140vh;
+  height: 50vh;
+}
+
+.map iframe{
+  border-color: #17baaa;
+  border-width: 2px;
+  border-radius: 10px;
+}
+.map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #0d0d0d;
+  box-shadow: 0 0 10px rgba(0, 255, 208, 0.5);
+  border-radius: 15px;
+}
   
-  #extras {
-    margin: 20px;
-    background-color: #444;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  #extras ul {
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  #extras li:before {
-    content: "\2713";
-    margin-right: 10px;
-  }
-  
-  #quote {
-    margin: 20px;
-    background-color: #444;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-    padding: 20px;
-  }
-  
-  @media screen and (max-width: 800px) {
-    nav {
-      flex-direction: column;
-    }
-  
-    nav ul {
-      text-align: center;
-      padding: 10px 0;
-    }
-  
-    #services {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+#extras {
+  display: flex;
+  margin: 20px;
+  background-color: #0d0d0d;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(0, 255, 208, 0.5);
+}
 
 
+  
+#extras ul {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 20px;
+}
 
- 
+#extras li {
+  margin-bottom: 10px;
+  color: white;
+}
+  
+#extras li:before {
+  content: "\2713";
+  margin-right: 10px;
+  color: #17baaa;
+}
+
+.about {
+
+  color: #fff;
+  padding: 40px;
+  line-height: 1.6;
+  text-align: justify;
+  background-color: #0d0d0d;
+  box-shadow: 0 0 10px rgba(0, 255, 208, 0.5);
+  border-radius: 25px;
+}
+
+.about p {
+  margin: 0 0 20px 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.about a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.about a:hover {
+  color: #ccc;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;    background-color: #0d0d0d;
+  box-shadow: 0 0 10px rgba(0, 255, 208, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  
+}
+
+.req{
+  margin-left: 10vh;
+}
+  
+
+.row-container {
+  display: flex;
+  align-items: center;
+}
+
+.row-container p {
+  width: 200px;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.details h1{
+  color: rgb(0, 167, 145);
+}
+
+.details .heh{
+  font-family: Arial, Helvetica, sans-serif ;
+  font-size: 20px;
+  font-weight: bold;
+  color: #019082;
+}
+
+.details .huh{
+  color: white;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  max-width: 30rem;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  background-color: #313131;
+}
+
+th {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+tr {
+  border-bottom: 1px solid #555;
+}
+
+
+td {
+  padding: 0.5rem;
+  color: #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #393939;
+}
+
+tr:nth-child(odd) {
+  background-color: #313131;
+}
+
+tr:hover {
+  background-color: #505050;
+  cursor: pointer;
+}
+
+.back-to-top a{
+  display: inline-block;
+  background-color: #019082;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all .25s ease;
+}
+
+.back-to-top:hover a{
+  background-color: #004f47;
+}
